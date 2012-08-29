@@ -1,0 +1,20 @@
+markdown: rdiscount
+permalink: /:year/:month/:day/:title
+rdiscount extensions: [smart]
+navigation:
+  - text: Home
+    url: /index.html
+    tooltip: <img alt="carpeliam" class="icon" height="40" src="/images/carpeliam-small.png" width="124"> Home Page. Blog.
+  - text: About
+    url: /about.html
+    tooltip: <img alt="me" class="icon" height="60" src="/images/me-small.png" width="72"> About Liam
+  - text: Portfolio
+    url: /portfolio.html
+    tooltip: '<img alt="Portfolio-small" height="50" src="/images/portfolio-small.png" style="vertical-align: middle; border: 1px solid black" width="50"> Portfolio'
+  - text: Hire Me
+    url: /for-hire.html
+    tooltip: <img alt="Linked_in" class="icon" height="60" src="/images/linked_in.png" width="60"> Currently unavailable for hire.
+    strike: true
+  - text: Contact
+    url: contact.html
+    tooltip: <img alt="Gmarker" class="icon" height="45" src="/images/gmarker.png" width="30"> Let's get in touch.

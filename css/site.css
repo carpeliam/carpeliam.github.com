@@ -1,0 +1,673 @@
+/* line 17, ../../../../.rvm/gems/ruby-1.8.7-p334/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../.rvm/gems/ruby-1.8.7-p334/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-1.8.7-p334/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-1.8.7-p334/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-1.8.7-p334/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-1.8.7-p334/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../.rvm/gems/ruby-1.8.7-p334/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-1.8.7-p334/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 115, ../../../../.rvm/gems/ruby-1.8.7-p334/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 1, ../../../app/stylesheets/partials/_popeye.sass */
+.ppy ul {
+  height: 0px;
+  width: 0px;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+/* line 17, ../../../app/stylesheets/partials/_popeye.sass */
+.ppy-stage {
+  background: transparent no-repeat center center;
+}
+
+/* line 23, ../../../app/stylesheets/partials/_popeye.sass */
+.ppy-js {
+  margin: 0 30px 10px 0;
+}
+
+/* line 31, ../../../app/stylesheets/partials/_popeye.sass */
+.ppy-expanded, .ppy-cap {
+  z-index: 200;
+}
+
+/* line 37, ../../../app/stylesheets/partials/_popeye.sass */
+.ppy {
+  font-size: 0.8em;
+}
+
+/* line 45, ../../../app/stylesheets/partials/_popeye.sass */
+.ppy-stagewrap {
+  background-color: #333333;
+  border: 1px solid #cccccc;
+  border-right: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+/* line 59, ../../../app/stylesheets/partials/_popeye.sass */
+.ppy-stage {
+  position: relative;
+  border: 10px solid #eeeeee;
+}
+
+/* line 69, ../../../app/stylesheets/partials/_popeye.sass */
+.ppy-tools {
+  overflow: hidden;
+  zoom: 1;
+  position: absolute;
+  padding: 10px;
+  top: 0px;
+  background: black;
+  display: inline;
+}
+/* line 87, ../../../app/stylesheets/partials/_popeye.sass */
+.ppy-tools.ppy-left {
+  left: 0px;
+  -moz-border-radius: 0 0 6px 0;
+  -khtml-border-radius: 0 0 6px 0;
+  -webkit-border-radius: 0 0 6px 0;
+  border-radius: 0 0 6px 0;
+}
+/* line 101, ../../../app/stylesheets/partials/_popeye.sass */
+.ppy-tools.ppy-right {
+  right: 0px;
+  -moz-border-radius: 0 0 0 6px;
+  -khtml-border-radius: 0 0 0 6px;
+  -webkit-border-radius: 0 0 0 6px;
+  border-radius: 0 0 0 6px;
+}
+/* line 115, ../../../app/stylesheets/partials/_popeye.sass */
+.ppy-tools div {
+  width: 25px;
+  height: 0px !important;
+  padding-top: 18px;
+  overflow: hidden;
+  float: left;
+  background: transparent no-repeat center top;
+  cursor: pointer;
+}
+
+/* line 135, ../../../app/stylesheets/partials/_popeye.sass */
+.ppy-prev {
+  background-image: url(/images/popeye/prev.png) !important;
+}
+
+/* line 143, ../../../app/stylesheets/partials/_popeye.sass */
+.ppy-enlarge {
+  width: 18px !important;
+  margin: 0 10px;
+  background-image: url(/images/popeye/enlarge.png) !important;
+}
+
+/* line 155, ../../../app/stylesheets/partials/_popeye.sass */
+.ppy-compact {
+  width: 18px !important;
+  margin: 0 10px;
+  background-image: url(/images/popeye/compact.png) !important;
+}
+
+/* line 167, ../../../app/stylesheets/partials/_popeye.sass */
+.ppy-next {
+  background-image: url(/images/popeye/next.png) !important;
+}
+
+/* line 175, ../../../app/stylesheets/partials/_popeye.sass */
+.ppy-tools div:hover {
+  background-position: center -18px;
+}
+
+/* line 183, ../../../app/stylesheets/partials/_popeye.sass */
+.ppy-cap {
+  background: #f6f9e0;
+  color: #666666;
+  line-height: 1.2em;
+  border: 1px solid #dddddd;
+  border-top: 0px;
+  font-size: 0.9em;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 205, ../../../app/stylesheets/partials/_popeye.sass */
+.ppy-textwrap {
+  padding: 10px;
+}
+
+/* line 213, ../../../app/stylesheets/partials/_popeye.sass */
+.ppy-count {
+  position: absolute;
+  padding: 3px 7px 0 5px;
+  bottom: 0px;
+  right: 0px;
+  font-style: italic;
+  font-size: 0.9em;
+  background: black;
+  color: #f7f7f7;
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  text-align: right;
+  display: inline;
+  -moz-border-radius: 6px 0 0 0;
+  -khtml-border-radius: 6px 0 0 0;
+  -webkit-border-radius: 6px 0 0 0;
+  border-radius: 6px 0 0 0;
+}
+
+/* line 253, ../../../app/stylesheets/partials/_popeye.sass */
+.ppy-loading {
+  background: #333333 url(/images/popeye/loading.gif) no-repeat center !important;
+}
+
+/* line 15, ../../../app/stylesheets/site.sass */
+body {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Lucida, Verdana, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+/* line 25, ../../../app/stylesheets/site.sass */
+acronym, abbr, time {
+  border-bottom: 1px dashed silver;
+}
+
+/* line 33, ../../../app/stylesheets/site.sass */
+pre {
+  overflow: auto;
+  font-family: Consolas, "Courier New", "Lucida Console", monospace;
+  margin: 10px 5px;
+}
+
+/* line 43, ../../../app/stylesheets/site.sass */
+ul, ol {
+  list-style-type: inherit;
+}
+
+/* line 51, ../../../app/stylesheets/site.sass */
+h1, h2, h3 {
+  font-family: "Trebuchet MS", Verdana, Helvetica, sans-serif;
+  font-weight: bold;
+  padding-top: 1em;
+}
+
+/* line 63, ../../../app/stylesheets/site.sass */
+h1 {
+  font-size: 2em;
+}
+
+/* line 71, ../../../app/stylesheets/site.sass */
+h2 {
+  font-size: 1.6em;
+}
+
+/* line 79, ../../../app/stylesheets/site.sass */
+p {
+  margin-bottom: 1em;
+}
+
+/* line 85, ../../../app/stylesheets/site.sass */
+strong {
+  font-weight: bold;
+}
+
+/* line 91, ../../../app/stylesheets/site.sass */
+em {
+  font-style: italic;
+}
+
+/* line 101, ../../../app/stylesheets/site.sass */
+a {
+  color: #7d9fa6;
+}
+/* line 107, ../../../app/stylesheets/site.sass */
+a:visited {
+  color: #56747c;
+  text-decoration: none;
+}
+/* line 115, ../../../app/stylesheets/site.sass */
+a:hover {
+  color: #5fb3c5;
+  text-decoration: underline;
+}
+
+/* line 125, ../../../app/stylesheets/site.sass */
+ul {
+  padding-left: 21px;
+}
+
+/* line 133, ../../../app/stylesheets/site.sass */
+.hideme {
+  display: none;
+}
+
+/* line 139, ../../../app/stylesheets/site.sass */
+.clearme {
+  clear: both;
+}
+
+/* line 145, ../../../app/stylesheets/site.sass */
+img.icon {
+  vertical-align: middle;
+  padding-right: 5px;
+  text-decoration: none;
+}
+
+/* line 157, ../../../app/stylesheets/site.sass */
+#container {
+  float: left;
+  margin: 0 -40% 0 0;
+  width: 100%;
+}
+
+/* line 169, ../../../app/stylesheets/site.sass */
+.above {
+  padding-bottom: 180px;
+}
+
+/* line 177, ../../../app/stylesheets/site.sass */
+form#search {
+  margin-top: 20px;
+}
+/* line 185, ../../../app/stylesheets/site.sass */
+form#search input[type=text] {
+  margin: 1px;
+  width: 90%;
+  padding-left: 18px;
+  background: url(/images/bg_magnify.gif) no-repeat 1px 1px;
+  border: 1px solid white;
+  color: #cccccc;
+  text-decoration: underline;
+  cursor: pointer;
+  cursor: hand;
+}
+/* line 207, ../../../app/stylesheets/site.sass */
+form#search input[type=text]:focus, form#search input[type=text].focus {
+  width: 75%;
+  border: 1px solid #cccccc;
+  color: black;
+  text-decoration: none;
+  cursor: text;
+}
+/* line 221, ../../../app/stylesheets/site.sass */
+form#search input[type=submit] {
+  margin: 1px;
+  border: 1px solid #cccccc;
+  background-color: white;
+  color: gray;
+}
+
+/* line 235, ../../../app/stylesheets/site.sass */
+#content {
+  margin: 0 40% 0 10px;
+  padding-right: 10px;
+  font: 105%/1.5 Cambria, Georgia, serif;
+}
+/* line 243, ../../../app/stylesheets/site.sass */
+#content .tags {
+  margin-top: 1ex;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+/* line 255, ../../../app/stylesheets/site.sass */
+div.subtitle {
+  font-style: italic;
+  font-size: 0.75em;
+  margin-bottom: 1em;
+}
+/* line 265, ../../../app/stylesheets/site.sass */
+div.subtitle .desc {
+  float: left;
+  margin-right: 5px;
+}
+/* line 273, ../../../app/stylesheets/site.sass */
+div.subtitle .date {
+  text-align: right;
+}
+
+/* line 281, ../../../app/stylesheets/site.sass */
+b.largest, span.largest {
+  font-size: 1.65em;
+}
+
+/* line 289, ../../../app/stylesheets/site.sass */
+b.large, span.large {
+  font-size: 1.2em;
+}
+
+/* line 301, ../../../app/stylesheets/site.sass */
+div#comments ul {
+  list-style: none;
+}
+
+/* line 309, ../../../app/stylesheets/site.sass */
+li.comment {
+  margin-top: 4px;
+  padding: 3px;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 319, ../../../app/stylesheets/site.sass */
+li.comment.odd {
+  background-color: #cdd7d9;
+}
+/* line 325, ../../../app/stylesheets/site.sass */
+li.comment.even {
+  background-color: #b4bdc0;
+}
+
+/* line 335, ../../../app/stylesheets/site.sass */
+div.comment_title {
+  font-weight: bold;
+}
+/* line 341, ../../../app/stylesheets/site.sass */
+div.comment_gravatar {
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+/* line 351, ../../../app/stylesheets/site.sass */
+div.comment_gravatar img {
+  border: white solid 1px;
+}
+/* line 357, ../../../app/stylesheets/site.sass */
+div.comment_body {
+  margin-left: 54px;
+}
+/* line 363, ../../../app/stylesheets/site.sass */
+div.comment_footer {
+  margin-top: 5px;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+/* line 373, ../../../app/stylesheets/site.sass */
+span.spam_warning {
+  font-weight: bold;
+}
+
+/* line 381, ../../../app/stylesheets/site.sass */
+a.not_spam {
+  color: green;
+}
+/* line 385, ../../../app/stylesheets/site.sass */
+a.mark_spam {
+  color: orange;
+}
+/* line 389, ../../../app/stylesheets/site.sass */
+a.delete {
+  color: red;
+}
+
+/* line 401, ../../../app/stylesheets/site.sass */
+h1.about {
+  margin-left: 170px;
+}
+
+/* line 407, ../../../app/stylesheets/site.sass */
+div.about {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 413, ../../../app/stylesheets/site.sass */
+div.about div.img {
+  float: left;
+  width: 160px;
+  height: 374px;
+}
+/* line 423, ../../../app/stylesheets/site.sass */
+div.about div.body {
+  margin-left: 170px;
+}
+
+/* line 435, ../../../app/stylesheets/site.sass */
+div.portfolio h2 {
+  text-align: right;
+  padding: 0px;
+  margin-top: 2em;
+  color: #cccfd0;
+  border-top: 2px solid #dddfe0;
+}
+
+/* line 449, ../../../app/stylesheets/site.sass */
+div.pset {
+  position: relative;
+}
+/* line 455, ../../../app/stylesheets/site.sass */
+div.pset div.ppy {
+  float: left;
+}
+/* line 461, ../../../app/stylesheets/site.sass */
+div.pset div.body {
+  margin-left: 187px;
+}
+/* line 467, ../../../app/stylesheets/site.sass */
+div.pset div.body div.name {
+  font-size: 1.3em;
+  margin: 15px 0px;
+}
+
+/* line 479, ../../../app/stylesheets/site.sass */
+.no-op {
+  text-decoration: line-through;
+}
+
+/* line 485, ../../../app/stylesheets/site.sass */
+.hireme {
+  margin: 50px 25px;
+}
+
+/* line 497, ../../../app/stylesheets/site.sass */
+#tooltip {
+  position: absolute;
+  z-index: 3000;
+  border: 2px solid white;
+  background-color: #eeeeee;
+  padding: 2px;
+  opacity: 0.85;
+  -webkit-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -moz-border-radius: 4px;
+  CCborderRadius: 4px;
+  CCborderRadius: 4px;
+}
+/* line 525, ../../../app/stylesheets/site.sass */
+#tooltip h3, #tooltip div {
+  margin: 0;
+}
+
+/* line 533, ../../../app/stylesheets/site.sass */
+#sidebar {
+  float: right;
+  margin: 0 5px 0 10px;
+  width: 38%;
+}
+/* line 543, ../../../app/stylesheets/site.sass */
+#sidebar h2 {
+  padding-left: 21px;
+  background-position: 0 1.5em;
+  background-repeat: no-repeat;
+}
+/* line 553, ../../../app/stylesheets/site.sass */
+#sidebar h2 a {
+  text-decoration: none;
+}
+
+/* line 563, ../../../app/stylesheets/site.sass */
+h2#twitter {
+  background-image: url(/images/twitter_t.png);
+}
+/* line 569, ../../../app/stylesheets/site.sass */
+h2#flickr {
+  background-image: url(/images/flickr_kr.png);
+}
+/* line 575, ../../../app/stylesheets/site.sass */
+h2#lastfm {
+  background-image: url(/images/lastfm_as.png);
+}
+/* line 581, ../../../app/stylesheets/site.sass */
+h2#delicious {
+  background-image: url(/images/delicious_box.png);
+}
+
+/* line 591, ../../../app/stylesheets/site.sass */
+ul li.first {
+  font-size: 1.05em;
+  color: black;
+}
+/* line 599, ../../../app/stylesheets/site.sass */
+ul li.second {
+  font-size: 0.95em;
+  color: #666666;
+}
+/* line 607, ../../../app/stylesheets/site.sass */
+ul li.third {
+  font-size: 0.9em;
+  color: #999999;
+}
+/* line 615, ../../../app/stylesheets/site.sass */
+ul li.fourth {
+  font-size: 0.85em;
+  color: #cccccc;
+}
+
+/* line 625, ../../../app/stylesheets/site.sass */
+.meta {
+  font-size: 0.8em;
+  font-family: georgia;
+  font-style: italic;
+}
+
+/* line 637, ../../../app/stylesheets/site.sass */
+div.flickrbadge {
+  height: 75px;
+  overflow: hidden;
+}
+
+/* line 647, ../../../app/stylesheets/site.sass */
+ul#flickr_photos {
+  list-style: none;
+}
+/* line 653, ../../../app/stylesheets/site.sass */
+ul#flickr_photos li {
+  display: inline;
+  float: left;
+  padding-right: 1px;
+}
+
+/* line 665, ../../../app/stylesheets/site.sass */
+footer {
+  background: url(/images/rule.png) repeat-x 0px 0px;
+  clear: both;
+  width: 100%;
+  height: 180px;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  bottom: 0px;
+}
+
+/* line 687, ../../../app/stylesheets/site.sass */
+#footer-img {
+  background: url(/images/carpeliam-logo.png) no-repeat 100% 0px;
+  width: 100%;
+  height: 180px;
+}
+
+/* line 699, ../../../app/stylesheets/site.sass */
+#footer-content {
+  padding-top: 100px;
+  font-size: 0.95em;
+}
+/* line 707, ../../../app/stylesheets/site.sass */
+#footer-content ul {
+  list-style: none;
+  font-size: 0.85em;
+  background: url(/images/wbg.png) repeat;
+  padding: 3px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  display: inline;
+  -webkit-border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+  CCborderRadiusTR: 4px;
+  CCborderRadiusBR: 4px;
+}
+/* line 739, ../../../app/stylesheets/site.sass */
+#footer-content ul li.selected {
+  font-weight: bold;
+}
+/* line 745, ../../../app/stylesheets/site.sass */
+#footer-content div.tooltip {
+  display: none;
+}
+/* line 751, ../../../app/stylesheets/site.sass */
+#footer-content li {
+  display: inline;
+}
+/* line 757, ../../../app/stylesheets/site.sass */
+#footer-content span#invisible {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}
