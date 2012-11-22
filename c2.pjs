@@ -1,0 +1,118 @@
+float x, y;
+float targetX, targetY;
+float easing = 0.025;
+
+int len = 100;
+
+// for use with logOnce
+boolean logged = [];
+
+// class Line {
+//   int len = 100;
+//   int delay = 4;
+//   int x, y;
+//   float rot;
+//   Line(int x, int y, float rot) {
+//     this.x = x;
+//     this.y = y;
+//     this.rot = rot;
+//   }
+//   
+//   void update() {
+//     line(x, y, x + len*cos(rot), y + len*sin(rot));
+//   }
+// }
+// 
+// class Graph {
+//   
+//   
+//   
+//   void update() {
+//     
+//   }
+// }
+
+void setup() {
+  size(600, 600);
+  strokeWeight(2);
+  smooth();
+  background(200);
+  x = width / 2;
+  y = height / 2;
+}
+
+void draw() {
+  int currentFrame = parseInt(localStorage['currentFrame']);
+  int frameCount = parseInt(localStorage['frameCount']);
+  
+  if (window.playback) {
+    localStorage['currentFrame'] = ++currentFrame;
+    if (currentFrame == frameCount) {
+      window.playback = false;
+    }
+    x = parseInt(localStorage['frame.' + currentFrame + '.x']);
+    float rotX = parseFloat(localStorage['frame.' + currentFrame + '.rotX']);
+    y = parseInt(localStorage['frame.' + currentFrame + '.y']);
+    float rotY = parseFloat(localStorage['frame.' + currentFrame + '.rotY']);
+  } else {
+    targetX = mouseX;
+    float dx = mouseX - x;
+    float rot = random() * PI;
+    float rotX = 0;
+    float rotY = 0;
+    if (abs(dx) > 1) {
+      x += dx * easing;
+      rotX = len*cos(rot) * dx * easing;
+    }
+  
+    targetY = mouseY;
+    float dy = mouseY - y;
+    if (abs(dy) > 1) {
+      y += dy * easing;
+      rotY = len*sin(rot) * dy * easing;
+    }    
+  }
+  
+  if (window.recording) {
+    localStorage['frameCount'] = ++frameCount;
+    localStorage['currentFrame'] = ++currentFrame;
+    
+    localStorage['frame.' + currentFrame + '.x'] = x;
+    localStorage['frame.' + currentFrame + '.rotX'] = rotX;
+    localStorage['frame.' + currentFrame + '.y'] = y;
+    localStorage['frame.' + currentFrame + '.rotY'] = rotY;
+  }
+  
+  
+  
+  
+  background(200);
+  stroke(100);
+  line(x - len, y, x + len, y);
+  line(x, y - len, x, y + len);
+  
+  stroke(255);
+  for (int i = 0; i < window.lineCount; i++) {
+    float pX = i / window.lineCount;
+    float pY = (i + 1) / window.lineCount;
+    // bottom right
+    line(x, y + len*pY, x + len - len*pX + rotX, y + rotY);
+    // top right
+    line(x, y - len*pY, x + len - len*pX + rotX, y + rotY);
+    // bottom left
+    line(x, y + len*pY, x - (len - len*pX) + rotX, y + rotY);
+    // top left
+    line(x, y - len*pY, x - (len - len*pX) + rotX, y + rotY);
+  }
+}
+
+void logOnce(arg) {
+  if (!logged[arg]) {
+    console.log(arg);
+    logged[arg] = true;
+  }
+}
+
+void mouseScrolled() {
+  len += mouseScroll;
+}
