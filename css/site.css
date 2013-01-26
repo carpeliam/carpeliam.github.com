@@ -223,7 +223,8 @@ body {
 }
 
 /* line 25, ../../../app/stylesheets/site.sass */
-acronym, abbr, time {
+.tweet_time a { text-decoration: none }
+acronym, abbr, time, .tweet_time a {
   border-bottom: 1px dashed silver;
 }
 
@@ -568,22 +569,22 @@ h2#delicious {
 }
 
 /* line 591, ../../../app/stylesheets/site.sass */
-ul li.first {
+ul.tweet_list li.tweet_first {
   font-size: 1.05em;
   color: black;
 }
 /* line 599, ../../../app/stylesheets/site.sass */
-ul li.second {
+ul.tweet_list li:nth-child(2) {
   font-size: 0.95em;
   color: #666666;
 }
 /* line 607, ../../../app/stylesheets/site.sass */
-ul li.third {
+ul.tweet_list li:nth-child(3) {
   font-size: 0.9em;
   color: #999999;
 }
 /* line 615, ../../../app/stylesheets/site.sass */
-ul li.fourth {
+ul.tweet_list li:nth-child(4) {
   font-size: 0.85em;
   color: #cccccc;
 }
