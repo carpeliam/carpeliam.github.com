@@ -1,0 +1,11 @@
+---
+layout: post
+title: What&rsquo;s going on in 2013?
+---
+
+[I've been known to make resolutions](/2012/01/06/to-make-an-omelette) before. Sometimes they pan out, and sometimes, in the case of 2012's cooking expedition, they're a bit mixed in their success. But that shouldn't stop me from trying! With that in mind, here's what I plan to be up to in 2013:
+
+* **Learn something new, every day.** Seriously. Sometimes, you might say, "you learn something new every day," but often times, a day (or weeks) might go by where you don't learn anything, or you don't retain what you've learned. I'm making an effort to be consciously aware of my learning, as well as seek out knowledge on a daily basis. Part of the idea is that awareness of learning will help spark knowledge retention. The only rule to this is that I can't seek out knowledge for the sole purpose of filling my daily knowledge quota. Hopefully this will also force me to be more engaging in seeking out knowledge for general purposes.
+* **Focus on fitness, activity, and diet.** These all go hand in hand. I want 2013 to be a seriously active year. In August of 2012, I got back into running as well as rock climbing. Since then, I've won a (really really small) 5k, I've become an intermediate climber, and I'm considering training for a triathlon. I also was given an inflatable kayak for Christmas, which promises to be an excellent workout. I don't want to turn back now! I'm going to need to learn how to eat better if I want to get more out of my body, and I'm probably going to need to learn how to sleep better too. Hopefully, 2013 will see me visiting Acadia National Park, climbing the best rock climbing routes in New England, and perhaps even completing my first triathlon. Maybe somewhere on the horizon is a marathon, who knows what the limits are.
+
+Side goals include [writing and performing more music](http://www.thecolorsrun.com), making new friends, and if I'm lucky, getting back into the swing of cooking, continuing where I left off in 2012. Hopefully my band The Colors Run will be putting an album together in the March-April timeframe, so that's one goal that's looking pretty realizable. Here's to an accomplished and fulfilling 2013!
