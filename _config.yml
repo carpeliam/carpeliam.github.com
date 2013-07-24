@@ -16,5 +16,5 @@ navigation:
     tooltip: <img alt="Linked_in" class="icon" height="60" src="/images/linked_in.png" width="60"> Currently unavailable for hire.
     strike: true
   - text: Contact
-    url: contact.html
+    url: /contact.html
     tooltip: <img alt="Gmarker" class="icon" height="45" src="/images/gmarker.png" width="30"> Let's get in touch.
