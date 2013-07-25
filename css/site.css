@@ -1,3 +1,6 @@
+h1, h2, h3 {
+  padding-top: 1em;
+}
 
 
 
@@ -8,59 +11,23 @@ acronym, abbr, time, .tweet_time a {
 }
 
 
+.container {
+  padding-bottom: 180px;
+}
 
+
+
+/*** nav ***/
 img.icon {
   vertical-align: middle;
   padding-right: 5px;
   text-decoration: none;
 }
 
-
-
-
-
-
-/* line 255, ../../../app/stylesheets/site.sass */
-div.subtitle {
-  font-style: italic;
-  font-size: 0.75em;
-  margin-bottom: 1em;
-}
-/* line 265, ../../../app/stylesheets/site.sass */
-div.subtitle .desc {
-  float: left;
-  margin-right: 5px;
-}
-/* line 273, ../../../app/stylesheets/site.sass */
-div.subtitle .date {
-  text-align: right;
+.no-op {
+  text-decoration: line-through;
 }
 
-/* line 281, ../../../app/stylesheets/site.sass */
-b.largest, span.largest {
-  font-size: 1.65em;
-}
-
-/* line 289, ../../../app/stylesheets/site.sass */
-b.large, span.large {
-  font-size: 1.2em;
-}
-
-
-
-
-
-
-/* line 169, ../../../app/stylesheets/site.sass */
-.above {
-  padding-bottom: 180px;
-}
-
-
-
-h1, h2, h3 {
-  padding-top: 1em;
-}
 
 
 #sidebar h2 {
@@ -68,38 +35,27 @@ h1, h2, h3 {
   background-position: 0 1.5em;
   background-repeat: no-repeat;
 }
-/* line 553, ../../../app/stylesheets/site.sass */
 #sidebar h2 a {
   text-decoration: none;
 }
-
-/* line 563, ../../../app/stylesheets/site.sass */
 h2#twitter {
   background-image: url(/images/twitter_t.png);
 }
-/* line 569, ../../../app/stylesheets/site.sass */
 h2#flickr {
   background-image: url(/images/flickr_kr.png);
 }
-/* line 575, ../../../app/stylesheets/site.sass */
 h2#lastfm {
   background-image: url(/images/lastfm_as.png);
 }
-/* line 581, ../../../app/stylesheets/site.sass */
 h2#delicious {
   background-image: url(/images/delicious_box.png);
 }
 
 
 
-
-
-
-/* line 177, ../../../app/stylesheets/site.sass */
 form#search {
   margin-top: 20px;
 }
-/* line 185, ../../../app/stylesheets/site.sass */
 form#search input[type=text] {
   margin: 1px;
   width: 90%;
@@ -111,7 +67,6 @@ form#search input[type=text] {
   cursor: pointer;
   cursor: hand;
 }
-/* line 207, ../../../app/stylesheets/site.sass */
 form#search input[type=text]:focus, form#search input[type=text].focus {
   width: 75%;
   border: 1px solid #cccccc;
@@ -119,7 +74,6 @@ form#search input[type=text]:focus, form#search input[type=text].focus {
   text-decoration: none;
   cursor: text;
 }
-/* line 221, ../../../app/stylesheets/site.sass */
 form#search input[type=submit] {
   margin: 1px;
   border: 1px solid #cccccc;
@@ -128,23 +82,42 @@ form#search input[type=submit] {
 }
 
 
+/*** blog ***/
+div.subtitle {
+  font-style: italic;
+  font-size: 0.75em;
+  margin-bottom: 1em;
+}
+div.subtitle .desc {
+  float: left;
+  margin-right: 5px;
+}
+div.subtitle .date {
+  text-align: right;
+}
 
-.media {
-  overflow: inherit;
+/*** sidebar ***/
+b.largest, span.largest {
+  font-size: 1.65em;
+}
+b.large, span.large {
+  font-size: 1.2em;
 }
 
 
 
 
-
-/* line 401, ../../../app/stylesheets/site.sass */
 .about h1 {
   margin-left: 170px;
 }
 
 
-/* line 435, ../../../app/stylesheets/site.sass */
-div.portfolio h2 {
+
+.portfolio .media {
+  overflow: inherit;
+}
+
+.portfolio h2 {
   text-align: right;
   padding: 0px;
   margin-top: 2em;
@@ -152,65 +125,21 @@ div.portfolio h2 {
   border-top: 2px solid #dddfe0;
 }
 
-/* line 449, ../../../app/stylesheets/site.sass */
-div.pset {
-  position: relative;
-}
-/* line 455, ../../../app/stylesheets/site.sass */
-div.pset div.ppy {
-  float: left;
-}
-/* line 461, ../../../app/stylesheets/site.sass */
-div.pset div.body {
-  margin-left: 187px;
-}
-/* line 467, ../../../app/stylesheets/site.sass */
-.portfolio .row .body .name {
-  font-size: 1.3em;
-  margin: 15px 0px;
+.portfolio .description {
+  display: none;
 }
 
-/* line 479, ../../../app/stylesheets/site.sass */
-.no-op {
-  text-decoration: line-through;
-}
 
-/* line 485, ../../../app/stylesheets/site.sass */
+
+
+
 .hireme {
   margin: 50px 25px;
 }
 
 
 
-.container {
-  padding-bottom: 180px;
-}
 
-
-
-
-article {
-  clear: both;
-}
-
-
-
-/* line 133, ../../../app/stylesheets/site.sass */
-.hideme {
-  display: none;
-}
-
-/* line 139, ../../../app/stylesheets/site.sass */
-.clearme {
-  clear: both;
-}
-
-
-
-
-
-
-/* line 665, ../../../app/stylesheets/site.sass */
 footer {
   background: url(/images/rule.png) repeat-x 0px 0px;
   clear: both;
@@ -222,7 +151,6 @@ footer {
   bottom: 0px;
 }
 
-/* line 687, ../../../app/stylesheets/site.sass */
 #footer-img {
   background: url(/images/carpeliam-logo.png) no-repeat 100% 50%;
   width: 100%;
@@ -235,11 +163,9 @@ footer {
   }
 }
 
-/* line 699, ../../../app/stylesheets/site.sass */
 #footer-content {
   padding-top: 100px;
 }
-/* line 707, ../../../app/stylesheets/site.sass */
 #footer-content ul {
   list-style: none;
   background: url(/images/wbg.png) repeat;
@@ -253,19 +179,15 @@ footer {
   -moz-border-radius-topright: 4px;
   -moz-border-radius-bottomright: 4px;
 }
-/* line 739, ../../../app/stylesheets/site.sass */
 #footer-content ul li.selected {
   font-weight: bold;
 }
-/* line 745, ../../../app/stylesheets/site.sass */
 #footer-content div.tooltip {
   display: none;
 }
-/* line 751, ../../../app/stylesheets/site.sass */
 #footer-content li {
   display: inline;
 }
-/* line 757, ../../../app/stylesheets/site.sass */
 #footer-content span#invisible {
   position: fixed;
   bottom: 0px;
