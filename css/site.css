@@ -105,12 +105,16 @@ b.large, span.large {
 }
 
 
-
-
-.about h1 {
-  margin-left: 170px;
+.about h1 { margin-left: 170px; }
+@media (max-width: 480px) {
+  .about h1 { margin-left: inherit; }
+  .about .pull-left {
+    opacity: .3;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
 }
-
 
 
 .portfolio .media {
