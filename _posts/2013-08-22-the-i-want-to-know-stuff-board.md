@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The "I want to know stuff" board
+description: better learning outcomes through public declarations of interest
 ---
 
 I was talking with a co-worker a few weeks ago about the process for learning
