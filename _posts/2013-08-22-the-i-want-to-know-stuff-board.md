@@ -7,9 +7,9 @@ description: better learning outcomes through public declarations of interest
 I was talking with a co-worker a few weeks ago about the process for learning
 new technologies that are on the fringe of what we know now&hellip; say, for
 example, what new Backbone.js-based frameworks are out there
-([Marionette](http://marionettejs.com/), [Chaplin](http://chaplinjs.org/),
-[Thorax](http://thoraxjs.org/) &ndash; which to choose?). I was thinking it'd be
-great if there was some board somewhere where we could write what we're
+([Chaplin](http://chaplinjs.org/), [Thorax](http://thoraxjs.org/),
+[Marionette](http://marionettejs.com/) &ndash; which to choose?). I was thinking
+it'd be great if there was some board somewhere where we could write what we're
 interested in learning, and other people could tag on their name as if to say "I
 want to know that too!", and then anybody else who already knew about these
 things could put themselves down as a source for the information, or could get
