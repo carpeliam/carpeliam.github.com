@@ -83,6 +83,9 @@ form#search input[type=submit] {
 
 
 /*** blog ***/
+article {
+  clear: both;
+}
 div.subtitle {
   font-style: italic;
   font-size: 0.75em;
