@@ -18,26 +18,33 @@ $(function() {
   // side bar
   var sideItemTemplate = _.template($('#sideItemTemplate').html());
 
-  var cache = new LastFMCache();
-  var lastfm = new LastFM({apiKey: 'b44f47f324f77489475e2a7542932da6', cache: cache});
-  lastfm.user.getRecentTracks({user:'carpeliam'}, {
-    success: function(data) {
-      var tracks = data.recenttracks.track;
-      var $list = $('<ul id="lastfm_tracks"/>').insertAfter($('#lastfm'));
-      for (var i in tracks) {
-        var date = new Date(tracks[i].date.uts * 1000);
-        $list.append(sideItemTemplate({
-          title: tracks[i].artist['#text'] + ' &ndash; ' + tracks[i].name,
-          url: tracks[i].url,
-          time: date.toISOString(),
-          date: date.toString()
-        }));
+  SC.initialize({ client_id: '65e74ad7cc2b23eea893e18743d45f74' });
+  SC.get('/users/6867700/tracks', {limit: 20}, function(tracks, error) {
+    if (error) {
+      if (typeof console !== 'undefined' && console !== null) {
+        console.log('SoundCloud: ' + error.message);
       }
-      $list.find('time').timeago();
-    },
-    error: function(code, message) {
-      $('<div class="error"/>').text(message).insertAfter($('#lastfm'));
+      return;
     }
+    var $player = $('<div>').insertAfter('#soundcloud');
+    var $list = $('<ul id="soundcloud_tracks">').insertAfter($player);
+    for (var i in tracks) {
+      var date = new Date(tracks[i].created_at);
+      var $track = $(sideItemTemplate({
+        title: tracks[i].title,
+        url: tracks[i].permalink_url,
+        time: date.toISOString(),
+        date: date.toString()
+      }));
+      $track.find('a').on('click', function(e) {
+        e.preventDefault();
+        SC.oEmbed($(this).attr('href'), { auto_play: true, color: '#5b8bc6', maxheight: 115, show_artwork: false }, function(oEmbed) {
+          $player.html(oEmbed.html);
+        });
+      });
+      $list.append($track);
+    }
+    $list.find('time').timeago();
   });
   
   $.getJSON('http://feeds.delicious.com/v2/json/carpeliam?count=5&callback=?').done(function(data) {
