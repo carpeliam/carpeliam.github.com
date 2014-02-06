@@ -28,15 +28,7 @@
             on
             <a href="http://www.twitter.com/carpeliam">twitter</a>.
           </div>
-          <h2 id="soundcloud">
-            <a href="https://soundcloud.com/carpeliam" title="carpeliam on soundcloud">audio</a>
-          </h2>
-          <h2 id="delicious">
-            <a href="http://delicious.com/carpeliam" title="carpeliam on del.icio.us">bookmarked</a>
-          </h2>
-          <h2 id="dailymile">
-            <a href="http://www.dailymile.com/people/carpeliam" title="carpeliam on dailymile">fitness</a>
-          </h2>
+          <h2>activity</h2>
         </div>
       </div>
     </div>
@@ -60,7 +52,7 @@
       </div>
     </footer>
     <script id="sideItemTemplate" type="text/template">
-      <li>
+      <li class="item-<%= itemType %>">
         <a href="<%= url %>"><%= title %></a>
         <time datetime="<%= time %>">
           <%= date %>
@@ -68,9 +60,13 @@
       </li>
     </script>
     <script src="/js/underscore-min.js"></script>
+    <script src="/js/backbone-min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/jquery.popeye-2.1.min.js"></script>
     <script src="/js/jquery.timeago.js"></script>
+    <script src="/js/lastfm.api.md5.js"></script>
+    <script src="/js/lastfm.api.js"></script>
+    <script src="/js/lastfm.api.cache.js"></script>
     <script src="http://connect.soundcloud.com/sdk.js"></script>
     <script src="/js/carpeliam.js"></script>
     <script>
@@ -88,7 +84,7 @@
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-23415161-1']);
         _gaq.push(['_trackPageview']);
-        
+
         (function() {
           var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';

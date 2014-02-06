@@ -54,6 +54,19 @@ h2#dailymile {
   background-image: url(/images/dailymile.png);
 }
 
+.activity-feed li.item-soundcloud {
+  list-style-image: url(/images/soundcloud_cloud.png);
+}
+.activity-feed li.item-lastfm {
+  list-style-image: url(/images/lastfm_as.png);
+}
+.activity-feed li.item-delicious {
+  list-style-image: url(/images/delicious_box.png);
+}
+.activity-feed li.item-dailymile {
+  list-style-image: url(/images/dailymile.png);
+}
+
 
 
 form#search {
