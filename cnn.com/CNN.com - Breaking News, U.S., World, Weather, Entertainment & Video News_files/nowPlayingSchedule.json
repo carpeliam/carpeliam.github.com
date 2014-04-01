@@ -1,0 +1,65 @@
+parseNowPlayingJSON_nowplaying_1_0_2({
+   "channel" : [
+      {
+         "provider" : "cnn.com",
+         "feeds" : {
+            "cell_iOSFileSelection" : {
+               "iphone" : "iPhoneCell_CNN",
+               "ipad" : "iPadCell_CNN"
+            },
+            "wifi_iOSFileSelection" : {
+               "iphone" : "iPhoneWIFI_CNN",
+               "ipad" : "iPadWIFI_CNN"
+            }
+         },
+         "time" : "12am ET / 9pm PT",
+         "copyright" : "2011 Cable News Network. All Rights Reserved.",
+         "containerXML" : "http://www.cnn.com/.element/apps/cvp/ios/cfg/container.xml",
+         "program" : "Smerconish",
+         "timestamp" : "20140401T003502-0400",
+         "configXML" : "http://www.cnn.com/.element/apps/cvp/ios/cfg/config.xml",
+         "id" : "CNN",
+         "channelImage" : "http://i.cdn.turner.com/cnn/.element/img/3.0/sect/tv/cnn_logo_64x36.png",
+         "images" : {
+            "120x68" : "http://i.cdn.turner.com/cnn/2014/images/03/07/smer_digital.jpg"
+         },
+         "minIOSVersion" : "3.2",
+         "description" : "Michael Smerconish tackles America's top political stories and news of the week",
+         "videoXML" : "cvptve/iosstream1",
+         "episodeLength" : 3600,
+         "channelClassification" : "News"
+      },
+      {
+         "provider" : "HLNtv.com",
+         "feeds" : {
+            "cell_iOSFileSelection" : {
+               "iphone" : "iPhoneCell_HLN",
+               "ipad" : "iPadCell_HLN"
+            },
+            "wifi_iOSFileSelection" : {
+               "iphone" : "iPhoneWIFI_HLN",
+               "ipad" : "iPadWIFI_HLN"
+            }
+         },
+         "time" : "12am ET / 9pm PT",
+         "copyright" : "2011 Cable News Network. All Rights Reserved.",
+         "containerXML" : "http://www.cnn.com/.element/apps/cvp/ios/cfg/container.xml",
+         "program" : "Forensic Files",
+         "timestamp" : "20140401T003502-0400",
+         "configXML" : "http://www.cnn.com/.element/apps/cvp/ios/cfg/config.xml",
+         "id" : "HLN",
+         "channelImage" : "http://i.cdn.turner.com/cnn/.element/img/3.0/sect/tv/hln_logo_64x36.png",
+         "images" : {
+            "120x68" : "http://i.cdn.turner.com/cnn/2011/images/12/19/forensicfiles_next.jpg"
+         },
+         "minIOSVersion" : "3.2",
+         "description" : "Forensic Files follows investigators as they piece together bizarre sets of clues from crime scenes to build evidence through a whodunit, half-hour race against time.",
+         "videoXML" : "cvptve/iosstream2",
+         "episodeLength" : 3600,
+         "channelClassification" : "News"
+      }
+   ]
+}
+
+
+);

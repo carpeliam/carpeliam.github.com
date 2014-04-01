@@ -1,0 +1,82 @@
+parseNowPlayingJSON_563202([
+   {
+      "thumbnail" : "http://i2.cdn.turner.com/cnn/dam/assets/140331081318-newday-newton-mh370-search-intensifies-00002711-search-tease.jpg",
+      "url" : "http://www.cnn.com/video/?/video/world/2014/03/31/newday-newton-mh370-search-intensifies.cnn",
+      "trt" : "109",
+      "id" : "world/2014/03/31/newday-newton-mh370-search-intensifies.cnn",
+      "description" : "Australian search crew are back to square one after objects spotted turned out to be fishing equipment and dead jellyfish. ",
+      "headline" : "New floating objects lead to dead end"
+   },
+   {
+      "thumbnail" : "http://i2.cdn.turner.com/cnn/dam/assets/140331104421-nr-starr-north-korea-south-korea-exchange-shots-00005423-search-tease.jpg",
+      "url" : "http://www.cnn.com/video/?/video/world/2014/03/31/nr-starr-north-korea-south-korea-exchange-shots.cnn",
+      "trt" : "83",
+      "id" : "world/2014/03/31/nr-starr-north-korea-south-korea-exchange-shots.cnn",
+      "description" : "North and South Korea exchanged fire after North Korea's shells landed in South Korean waters during a military drill. ",
+      "headline" : "North, South Korea exchange fire at sea"
+   },
+   {
+      "thumbnail" : "http://i2.cdn.turner.com/cnn/dam/assets/140331182903-lead-foreman-flight-370-search-area-00013403-search-tease.jpg",
+      "url" : "http://www.cnn.com/video/?/video/world/2014/03/31/lead-foreman-flight-370-search-area.cnn",
+      "trt" : "141",
+      "id" : "world/2014/03/31/lead-foreman-flight-370-search-area.cnn",
+      "description" : "Tom Foreman shows the search area for MH370 and explains how difficult it will be in phase two of the investigation.",
+      "headline" : "Obstacles in underwater search for MH370"
+   },
+   {
+      "thumbnail" : "http://i2.cdn.turner.com/cnn/dam/assets/140331181147-lead-pkg-sidner-mh370-pilots-daughter-00001819-search-tease.jpg",
+      "url" : "http://www.cnn.com/video/?/video/world/2014/03/31/lead-pkg-sidner-mh370-pilots-daughter.cnn",
+      "trt" : "80",
+      "id" : "world/2014/03/31/lead-pkg-sidner-mh370-pilots-daughter.cnn",
+      "description" : "The daughter of Flight 370's pilot Zaharie Ahmad Shah lashes out at the Daily Mail. CNN's Sara Sidner reports. ",
+      "headline" : "Pilot's daughter lashes out at media"
+   },
+   {
+      "thumbnail" : "http://i2.cdn.turner.com/cnn/dam/assets/140327205226-driver-karma-search-tease.jpg",
+      "url" : "http://www.cnn.com/video/?/video/us/2014/03/27/erin-pkg-moos-road-rage-karma.cnn",
+      "trt" : "152",
+      "id" : "us/2014/03/27/erin-pkg-moos-road-rage-karma.cnn",
+      "description" : "Watch what happens to driver who tailgates and flips the bird. CNN's Jeanne Moos reports on road rage karma.",
+      "headline" : "Man flips the bird and ... instant karma"
+   },
+   {
+      "thumbnail" : "http://i2.cdn.turner.com/cnn/dam/assets/140331074816-newday-snl-obama-invites-bieber-pope-to-white-house-00002530-search-tease.jpg",
+      "url" : "http://www.cnn.com/video/?/video/showbiz/2014/03/31/newday-snl-obama-invites-bieber-pope-to-white-house.cnn",
+      "trt" : "60",
+      "id" : "showbiz/2014/03/31/newday-snl-obama-invites-bieber-pope-to-white-house.cnn",
+      "description" : "\"President Obama\" invites a few very important guests to the White House in this hilarious \"Saturday Night Live\" skit. ",
+      "headline" : "Obama and Bieber share kiss on 'SNL'"
+   },
+   {
+      "thumbnail" : "http://i2.cdn.turner.com/cnn/dam/assets/140331125525-hln-vo-albuquerque-police-violence-00005424-search-tease.jpg",
+      "url" : "http://www.cnn.com/video/?/video/us/2014/03/31/hln-vo-albuquerque-police-violence.hln",
+      "trt" : "137",
+      "id" : "us/2014/03/31/hln-vo-albuquerque-police-violence.hln",
+      "description" : "The shooting of an unarmed homeless man by police prompts protests in Albuquerque, New Mexico. ",
+      "headline" : "Outrage over fatal shootings by police"
+   },
+   {
+      "thumbnail" : "http://i2.cdn.turner.com/cnn/dam/assets/140324125826-mxp-vo-charges-shark-feeding-00002003-search-tease.jpg",
+      "url" : "http://www.cnn.com/video/?/video/us/2014/03/24/mxp-vo-charges-shark-feeding.hln",
+      "trt" : "91",
+      "id" : "us/2014/03/24/mxp-vo-charges-shark-feeding.hln",
+      "description" : "Several men face fines and even criminal charges after a video surfaced showing divers feeding sharks by hand. ",
+      "headline" : "Shark feeding video leads to charges"
+   },
+   {
+      "thumbnail" : "http://i2.cdn.turner.com/cnn/dam/assets/140328220634-pmt-piers-morgan-final-thoughts-00001011-search-tease.jpg",
+      "url" : "http://www.cnn.com/video/?/video/showbiz/2014/03/29/pmt-piers-morgan-final-thoughts.cnn",
+      "trt" : "203",
+      "id" : "showbiz/2014/03/29/pmt-piers-morgan-final-thoughts.cnn",
+      "description" : "At the end of his final show on CNN, Piers Morgan gives some parting thoughts as he says goodbye.",
+      "headline" : "Piers Morgan says goodbye"
+   },
+   {
+      "thumbnail" : "http://i2.cdn.turner.com/cnn/dam/assets/140329191319-ngtv-two-california-earthquakes-032914-search-tease.jpg",
+      "url" : "http://www.cnn.com/video/?/video/bestoftv/2014/03/31/morning-minute-3-31-newday.cnn-ap",
+      "trt" : "61",
+      "id" : "bestoftv/2014/03/31/morning-minute-3-31-newday.cnn-ap",
+      "description" : "CNN's Michaela Pereira takes a look at the top news stories that you need to know.",
+      "headline" : "New Day's Morning Minute "
+   }
+]);
