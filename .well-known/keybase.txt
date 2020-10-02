@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/carpeliam
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://carpeliam.com
+  * I am carpeliam (https://keybase.io/carpeliam) on keybase.
+  * I have a public key ASCaBaC8yV-Z-VIp5vDtbnw64YJ6UYl83SVwk-1gnCaieAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01209a05a0bcc95f99f95229e6f0ed6e7c3ae1827a51897cdd257093ed609c26a2780a",
+      "host": "keybase.io",
+      "kid": "01209a05a0bcc95f99f95229e6f0ed6e7c3ae1827a51897cdd257093ed609c26a2780a",
+      "uid": "fcc4a1f57a4f5d263c4bc298d9df8500",
+      "username": "carpeliam"
+    },
+    "merkle_root": {
+      "ctime": 1601608534,
+      "hash": "a4e4358ae258e7a8737600b1b80e51dd8ef1e1d7748130b1b58459268f13fe4ad21646c4bb6bc69766bbe577b944fadf57f8af3602bc813b498614f18fa019fa",
+      "hash_meta": "7148fe6185685a46cba8f5d8dbfdb25e4d6c080cc16be154271557074c937509",
+      "seqno": 17726044
+    },
+    "service": {
+      "entropy": "BJ7f2J47gvAbVjKypJZsWv1G",
+      "hostname": "carpeliam.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1601608633,
+  "expire_in": 504576000,
+  "prev": "75e260dfd26b2e5cad1f1f2b7c47605aef980a992d484235d956e0af3e5725b3",
+  "seqno": 17,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgmgWgvMlfmflSKebw7W58OuGCelGJfN0lcJPtYJwmongKp3BheWxvYWTESpcCEcQgdeJg39JrLlytHx8rfEdgWu+YCpktSEI12Vbgrz5XJbPEIIwl0tYWlJVbJthgnH6efd3gdLf0lIwsI1bTwfAynL8VAgHCo3NpZ8RAVpx8dPG3Heq2Rky3U4CJeptiiCzuoAQzgY95bHoY+dK7ZwosHHsO+3ZtU6CaHdeZyFL1DmBIao5YIUIkM3kLB6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIEpyFo/K8PjIPb2sk0VqS1F6T4v2fhLb15YoCf/jTzj2o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/carpeliam
+
+==================================================================
