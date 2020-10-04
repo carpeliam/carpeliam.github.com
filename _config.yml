@@ -1,6 +1,5 @@
-markdown: rdiscount
 permalink: /:year/:month/:day/:title
-rdiscount extensions: [smart]
+plugins: [jekyll-paginate]
 paginate: 5
 include: [".well-known"]
 navigation:

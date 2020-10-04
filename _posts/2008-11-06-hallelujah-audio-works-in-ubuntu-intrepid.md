@@ -13,15 +13,19 @@ The first problem comes from the fact that there seem to be several places where
 
 PulseAudio seemed to be the default, seemingly oblivious to the fact that nothing was pointing to it and asking it to play.
 
-    $ aplay /usr/share/sounds/question.wav
-    Playing WAVE '/usr/share/sounds/question.wav' : Signed 16 bit Little Endian, Rate 44100 Hz, Mono
-    ALSA lib pcm_pulse.c:629:(pulse_prepare) PulseAudio: Unable to create stream: Invalid argument
+```sh
+$ aplay /usr/share/sounds/question.wav
+Playing WAVE '/usr/share/sounds/question.wav' : Signed 16 bit Little Endian, Rate 44100 Hz, Mono
+ALSA lib pcm_pulse.c:629:(pulse_prepare) PulseAudio: Unable to create stream: Invalid argument
+```
 
 The first thing I tried to do was to get sound working without PulseAudio, but that wasn't working for me either. Apparently this is where things differ between me and the rest of the Ubuntu community- a lot of people leave PulseAudio, and things just "work". If anybody can tell me why what works for everybody else doesn't work for me, I'm really curious. But here's what I tried:
 
-    $ aplay -Dhw:0 /usr/share/sounds/question.wav
-    Playing WAVE '/usr/share/sounds/question.wav' : Signed 16 bit Little Endian, Rate 44100 Hz, Mono
-    aplay: set_params:954: Sample format non available
+```sh
+$ aplay -Dhw:0 /usr/share/sounds/question.wav
+Playing WAVE '/usr/share/sounds/question.wav' : Signed 16 bit Little Endian, Rate 44100 Hz, Mono
+aplay: set_params:954: Sample format non available
+```
 
 A few minutes in [#alsa](irc://freenode/#alsa) came back with a result: use ``plughw:0`` instead of ``hw:0``. (Didn't catch the reasoning behind this, something about "HDA codecs", somebody please enlighten me.)
 
@@ -33,12 +37,14 @@ Commence hours of debugging with somebody who is probably a code committer with 
 
 All I needed to do to get pulseaudio to work for me is to create the following (in ``~/.pulse/default.pa``):
 
-    #!/usr/bin/pulseaudio -nF
+```sh
+#!/usr/bin/pulseaudio -nF
 
-    .include /etc/pulse/default.pa
+.include /etc/pulse/default.pa
 
-    load-module module-alsa-sink device=plughw:M44 rate=44100 sink_name=delta44
-    set-default-sink delta44
+load-module module-alsa-sink device=plughw:M44 rate=44100 sink_name=delta44
+set-default-sink delta44
+```
 
 This includes the system-level default config so nothing gets overwritten, and then loads a module that specifies my sound device using plughw. M44 is my device's name, but ``plughw:0`` could also work just as well, or insert-your-device-name-here. Name the sink whatever makes sense to you, just as long as the sink_name you give in line #5 matches the value in line #6.
 
