@@ -1,5 +1,7 @@
 permalink: /:year/:month/:day/:title
-plugins: [jekyll-paginate]
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
 paginate: 5
 include: [".well-known"]
 navigation:
