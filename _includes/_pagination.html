@@ -4,11 +4,11 @@
       <a{% if paginator.previous_page %} href="{{ paginator.previous_page_path }}"{% endif %}>&laquo;</a>
     </li>
     <li{% if paginator.page == 1 %} class="active"{% endif %}>
-      <a{% unless paginator.page == 1 %} href="/"{% endunless %}>1</a>
+      <a{% unless paginator.page == 1 %} href="/notes/"{% endunless %}>1</a>
     </li>
     {% for count in (2..paginator.total_pages) %}
       <li{% if paginator.page == count %} class="active"{% endif %}>
-        <a{% unless paginator.page == count %} href="/page{{ count }}"{% endunless %}>{{ count }}</a>
+        <a{% unless paginator.page == count %} href="/notes/{{ count }}"{% endunless %}>{{ count }}</a>
       </li>
     {% endfor %}
     <li{% unless paginator.next_page %} class="disabled"{% endunless %}>

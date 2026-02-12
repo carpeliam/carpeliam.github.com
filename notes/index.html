@@ -1,0 +1,23 @@
+---
+layout: blog
+---
+
+{% for post in paginator.posts %}
+  <article class="clearfix">
+    <header>
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      <div class="subtitle">
+        <div class="desc">{{ post.description }}</div>
+        <div class="date">
+          posted
+          <time pubdate="" datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%S" }}" title="{{ post.date | date: "%a, %d %b %Y %H:%M:%S" }}">{{ post.date | date_to_long_string }}</time>
+          |
+          <a href="{{ post.url }}#disqus_thread">comments</a>
+        </div>
+      </div>
+    </header>
+    {{ post.content }}
+  </article>
+{% endfor %}
+
+{% include _pagination.html %}

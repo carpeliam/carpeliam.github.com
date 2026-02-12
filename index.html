@@ -1,23 +1,26 @@
 ---
-layout: blog
+layout: default
+title: about
 ---
 
-{% for post in paginator.posts %}
-  <article class="clearfix">
-    <header>
-      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-      <div class="subtitle">
-        <div class="desc">{{ post.description }}</div>
-        <div class="date">
-          posted
-          <time pubdate="" datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%S" }}" title="{{ post.date | date: "%a, %d %b %Y %H:%M:%S" }}">{{ post.date | date_to_long_string }}</time>
-          |
-          <a href="{{ post.url }}#disqus_thread">comments</a>
-        </div>
-      </div>
-    </header>
-    {{ post.content }}
-  </article>
-{% endfor %}
-
-{% include _pagination.html %}
+<div class="about">
+  <h1>Hi.</h1>
+  <div class="media">
+    <img alt="Half of me" src="/images/half-of-me.jpg" class="pull-left">
+    <div class="media-body">
+      <p>I'm Liam Morley. I'm interested in creating things.</p>
+      <p>
+        Professionally, that means software engineering. I've been building on top of the web since being a GeoCities Community Leader. I've always favored going far together over going fast by myself. Over the years I've worked within enterprise and startups, helping organizations improve not just their code, but how they work. With a background in XP, I reach for iterative and lean product practices that focus on outcomes first. I'm drawn to simple architectures, fast feedback loops, and cultivating cultures of open growth and learning.
+      </p>
+      <p>
+        I've been playing the piano for over two-thirds of my life, sometimes professionally, and I'm a singer/songwriter who has been in a band or two. Nothing beats the economy of a song when it comes to expressing a complete thought in limited time and space.
+      </p>
+      <p>
+        I've hiked over 3,000 miles over the last few years. In 2023, I thru-hiked the Long Trail in Vermont. In 2024, I thru-hiked the Appalachian Trail from Georgia to Maine, 2200 beautiful miles in 4.5 months. Most recently in 2025, the John Muir Trail ruined thru-hiking for me, giving me some of the most beautiful views I could ever hope to see. I'm always on the lookout for the next adventure, with a preference for "type 2 fun meets time for contemplation".
+      </p>
+      <p>
+        I currently live in Boston, a small jog away from the Harvard University Arboretum, and a short drive away from the White Mountains of NH. Say hi any time.
+      </p>
+    </div>
+  </div>
+</div>

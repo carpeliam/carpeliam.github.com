@@ -4,11 +4,11 @@ h1, h2, h3 {
   padding-top: 1em;
 }
 
+.no-op {
+  text-decoration: line-through;
+}
 
-
-
-.tweet_time a { text-decoration: none }
-acronym, abbr, time, .tweet_time a {
+acronym, abbr, time {
   border-bottom: 1px dashed silver;
 }
 
@@ -26,11 +26,6 @@ img.icon {
   text-decoration: none;
 }
 
-.no-op {
-  text-decoration: line-through;
-}
-
-
 
 #sidebar h2 {
   padding-left: 21px;
@@ -40,23 +35,6 @@ img.icon {
 #sidebar h2 a {
   text-decoration: none;
 }
-h2#twitter {
-  background-image: url(/images/twitter_t.png);
-}
-h2#flickr {
-  background-image: url(/images/flickr_kr.png);
-}
-h2#soundcloud {
-  background-image: url(/images/soundcloud_cloud.png);
-}
-h2#delicious {
-  background-image: url(/images/delicious_box.png);
-}
-h2#dailymile {
-  background-image: url(/images/dailymile.png);
-}
-
-
 
 form#search {
   margin-top: 20px;
@@ -192,16 +170,14 @@ footer {
 }
 #footer-content ul {
   list-style: none;
-  background: url(/images/wbg.png) repeat;
+  background: rgba(255, 255, 255, 0.5);
   padding: 3px;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
   border-right: 2px solid white;
   display: inline;
-  -webkit-border-top-right-radius: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-  -moz-border-radius-topright: 4px;
-  -moz-border-radius-bottomright: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 #footer-content ul li.selected {
   font-weight: bold;
